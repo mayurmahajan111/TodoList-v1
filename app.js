@@ -29,7 +29,7 @@ app.get("/", function(req, res) {
     newListItems: items
   });
 });
-///////////////////////////////////////////////////////////////////////////////
+
 app.post("/", function(req, res) {
   var item = req.body.newItem;
 
@@ -38,7 +38,7 @@ app.post("/", function(req, res) {
   res.redirect("/");
 })
 
-////////////////////////////////////////////////////////////////////
+
 app.listen(3000, function() {
   console.log("server started on port 3000");
 })
